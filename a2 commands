@@ -1,0 +1,75 @@
+1. In github create a new repository
+2. Create a file and in that type something of 2 or 3 lines -> give a file name and commit
+3. Copy the repo link
+4. On the desktop create 2 folders named dev1 and dev2.
+5. Open dev1 -> right click -> Git bash here
+6. in that type
+
+   git clone (repo link)
+
+7. Do the same for dev2 folder
+8. Go to dev1 git bash and type the following -
+
+cd (repo name)
+
+git branch devbranch1
+
+git checkout devbranch1
+
+vi (file name)
+
+7. Press "i" to edit the file
+8. Make some changes and press "esc"
+9. the type ":wq"
+10. Next type - 
+
+git init
+
+git add .
+
+git commit -m "changes"
+
+11. Now come to the git bash of dev2 folder
+12. Type -
+
+cd (Repo name)
+
+vi (file name)
+
+13. Press "i" to edit the file
+14. Make some changes and press "esc"
+15. the type ":wq"
+16. Next type - 
+
+git init
+
+git add .
+
+git commit -m "change2"
+
+git push origin main (or master)
+
+17. Come back to the git bash of dev1 folder
+18. Type - 
+
+git checkout master/main
+
+git pull
+
+git merge devbranch1
+
+vi (filename)
+
+19. Press "i" and merge both file text or make any visible changes.
+20. Press "esc" and then ":wq" -> Enter
+21. Then type -
+
+git init
+
+git add .
+
+git commit -m "change3"
+
+git push origin master (or main)
+
+git diff devbranch1
